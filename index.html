@@ -286,7 +286,7 @@
         </h2>
       <div class="content has-text-justified">
       <p>Our model trained only on 13 ShapeNet categories, can be extended to 3D scenes without any additional fine-tuning. Specifically, 
-          given a 3D scene point cloud, we obtain object instance mask using Mask3D, center and rescale them, and directly input them into our model. We visualize the results for some scenes from the Replica dataset.</p>
+          given a 3D scene point cloud, we obtain object instance mask using Mask3D, center and rescale them, and directly input them into our model. We visualize the results for some scenes from the <strong>Replica</strong> dataset.</p>
         <br></div>
       <figure style="text-align: center; margin-top: -15px; margin-bottom: -10px;">
         <div style="display: flex; justify-content: center; gap: 0.3rem;">
@@ -327,6 +327,50 @@
         Top row shows renderings of the original point clouds, bottom rows shows the superquadric representation obtained with <span class="dnerf">SuperDec</span>.
       </figcaption>
     </figure>
+
+    <br>
+    We also visualize the results of SuperDec on some scenes from <strong>ScanNet++</strong>. 
+    <br>
+
+    <figure style="text-align: center; margin-top: 25px; margin-bottom: -10px;">
+      <div style="display: flex; justify-content: center; gap: 0.3rem;">
+      
+      <div style="text-align: center;">
+        <div style="margin-bottom: 0.5rem;"><strong>88f265fe25</strong></div>
+        <img src="./static/figures/compressed/scannetpp/88f265fe25_pc.jpeg" style="width: 230px;">
+      </div>
+      <div style="text-align: center;">
+        <div style="margin-bottom: 0.5rem;"><strong>95748dd597</strong></div>
+        <img src="./static/figures/compressed/scannetpp/95748dd597_pc.jpeg" style="width: 230px;">
+      </div>
+      <div style="text-align: center;">
+        <div style="margin-bottom: 0.5rem;"><strong>2a1b555966</strong></div>
+        <img src="./static/figures/compressed/scannetpp/2a1b555966_pc_bis.jpeg" style="width: 230px;">
+      </div>
+      <div style="text-align: center;">
+        <div style="margin-bottom: 0.5rem;"><strong>0b031f3119</strong></div>
+        <img src="./static/figures/compressed/scannetpp/0b031f3119_pc.jpeg" style="width: 230px;">
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 0.3rem;">
+      <div style="text-align: center;">
+        <img src="./static/figures/compressed/scannetpp/88f265fe25_sq.jpeg" style="width: 230px;">
+      </div>
+      <div style="text-align: center;">
+        <img src="./static/figures/compressed/scannetpp/95748dd597_sq.jpeg" style="width: 230px;">
+      </div>
+      <div style="text-align: center;">
+        <img src="./static/figures/compressed/scannetpp/2a1b555966_sq_bis.jpg" style="width: 230px;">
+      </div>
+      <div style="text-align: center;">
+        <img src="./static/figures/compressed/scannetpp/0b031f3119_sq.jpeg" style="width: 230px;">
+      </div>
+    </div>
+    <figcaption style="margin-top: 10px;">
+      <strong>Qualitative results on ScanNet++ scenes.</strong>
+      Top row shows renderings of the original point clouds, bottom rows shows the superquadric representation obtained with <span class="dnerf">SuperDec</span>.
+    </figcaption>
+  </figure>
 
   </div>
 </section>
